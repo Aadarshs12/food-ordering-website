@@ -1,0 +1,22 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "This is React Prctice by Aadarsh Singh",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aadarshs12/namaste-react.git"
+  },
+  "author": "Aadarsh Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aadarshs12/namaste-react/issues"
+  },
+  "homepage": "https://github.com/Aadarshs12/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
+}
