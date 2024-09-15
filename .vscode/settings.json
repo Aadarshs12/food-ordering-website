@@ -1,0 +1,5 @@
+{
+    "editor.fontFamily": "fira code, Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "liveServer.settings.port": 5501,
+}

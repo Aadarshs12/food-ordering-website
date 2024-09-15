@@ -8,13 +8,81 @@
 </head>
 <body>
     <div id="root">
-        <h1>This is Aadarsh Singh</h1>
+        <h1>Component not Rendered</h1>
 
     </div>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-    <script src="./App.js">
+  
+    <script type="module" src="./src/App.js">
     </script>
 </body>
 </html>
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jobs</title>
+    <style>
+        table{
+            resize: none; 
+            overflow: auto; 
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px; 
+            white-space: nowrap;        
+        }
+    </style>
+</head>
+<body>
+    <h1>Jobs</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Job Name</th>
+                <th>Organization Name</th>
+                <th>Contract Type</th>
+                <th>Work Place</th>
+                <th>Status</th>
+                <th>Featured</th>
+                <th>Premier</th>
+                <th>Auto Renew</th>
+                <th>Job Count</th>
+                <th>Country</th>
+                <th>State</th>
+                <th>Created at</th>
+                <th>value1111111111</th>
+                <th>Value22222222</th>
+                <th>value3333333</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($data as $job)
+            <tr>
+                <td>{{ $job->title }}</td>
+                <td>{{ $job->jobPostedBy->name }}</td>
+                <td>{{ $job->contractTypes->pluck('name')->implode(', ') }}</td>
+                <td>{{ $job->workPlace->name ?? '' }}</td>
+                <td>{{ $job->is_active ? 'Active' : 'Inactive' }}</td>
+                <td>{{ $job->is_featured ? 'Yes' : 'No' }}</td>
+                <td>{{ $job->is_premier ? 'Yes' : 'No' }}</td>
+                <td>{{ $job->is_auto_renew ? 'Yes' : 'No' }}</td>
+                <td>{{ $job->jobApplications->count() }}</td>
+                <td>{{ $job->country->country ?? '' }}</td>
+                <td>{{ $job->state->state ?? '' }}</td>
+                <td>{{getConvertedDateFormat($job->created_at)}}</td>
+                <td>vale1dcjsdbcjdfbhfddfc</td>
+                <td>ascxjhdsbcjhvhvcsdhgvshgvhdtghvghghfghvb</td>
+                <td>ascxjhdsbcjhvhvcsdhgvshgvhdtghvghghfghvbsdsfdsfdferfcdsdfds</td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
+</body>
+</html>
+  -->
